@@ -79,3 +79,5 @@ $ cp ~/bin/* /usr/local/bin/
 
 # 참고 url
 - https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu
+
+- https://linuxconfig.org/ubuntu-20-04-ffmpeg-installation   (in ubuntu 20.04)
