@@ -19,7 +19,7 @@ $ sudo apt install curl
 $ curl -V  # 버전 확인
 ```
 
-## zsh  설정
+## zsh & oh-my-zsh  설치
 ```
 $ sudo apt install zsh
 
@@ -44,6 +44,27 @@ sudo apt-get install fonts-powerline
 
 ```
 
+## docky 
+- 설치
+
+    ```
+    $ sudo add-apt-repository ppa:docky-core/stable
+
+    $ sudo apt-get update
+
+    $ sudo apt-get install docky
+    ```
+- 삭제
+
+    ```
+    - 설치된거 삭제
+    $ sudo apt-get remove docky
+
+    - repository 삭제
+    $ sudo add-apt-repository --remove ppa:docky-core/stable
+    ```
+
+# 각종 명령어
 
 ## deb 파일 설치 방법
 ```
@@ -74,3 +95,13 @@ $ sudo vi /etc/network/interfaces
 
     post-down /sbin/ethtool -s 인터페이스명 wol g 
     ```
+
+
+## repository 추가, 삭제 명령어
+```
+- repository 추가시
+$ sudo add-apt-repository ppa:docky-core/ppa
+
+- repository 삭제시
+$ sudo add-apt-repository --remove ppa:docky-core/ppa
+```
