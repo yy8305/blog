@@ -44,25 +44,90 @@ sudo apt-get install fonts-powerline
 
 ```
 
-## docky 
-- 설치
-
+## docky 설치(메뉴바)
+- 파일로 설치
+  - 설치
+  
     ```
-    $ sudo add-apt-repository ppa:docky-core/stable
+    $ mkdir ~/tmp
 
-    $ sudo apt-get update
+    $ cd ~/tmp
 
-    $ sudo apt-get install docky
+    $ wget http://archive.ubuntu.com/ubuntu/pool/universe/g/gnome-sharp2/libgconf2.0-cil_2.24.2-4_all.deb
+
+    $ wget http://archive.ubuntu.com/ubuntu/pool/main/g/glibc/multiarch-support_2.27-3ubuntu1_amd64.deb
+
+    $ wget http://archive.ubuntu.com/ubuntu/pool/universe/libg/libgnome-keyring/libgnome-keyring-common_3.12.0-1build1_all.deb
+
+    $ wget http://archive.ubuntu.com/ubuntu/pool/universe/libg/libgnome-keyring/libgnome-keyring0_3.12.0-1build1_amd64.deb
+
+    $ wget http://archive.ubuntu.com/ubuntu/pool/universe/g/gnome-keyring-sharp/libgnome-keyring1.0-cil_1.0.0-5_amd64.deb
+
+    $ sudo apt-get install ./*.deb
+
+    $ wget http://archive.ubuntu.com/ubuntu/pool/universe/d/docky/docky_2.2.1.1-1_all.deb
+
+    $ sudo apt-get install ./docky_2.2.1.1-1_all.deb
     ```
-- 삭제
+  - 삭제
+- 패키지 설치 (2021-02-02 기준으로 작동안됨)
+  - 설치
 
-    ```
-    - 설치된거 삭제
-    $ sudo apt-get remove docky
+      ```
+      $ sudo add-apt-repository ppa:docky-core/stable
 
-    - repository 삭제
-    $ sudo add-apt-repository --remove ppa:docky-core/stable
+      $ sudo apt-get update
+
+      $ sudo apt-get install docky
+      ```
+  - 삭제
+
+      ```
+      - 설치된거 삭제
+      $ sudo apt-get remove docky
+
+      - repository 삭제
+      $ sudo add-apt-repository --remove ppa:docky-core/stable
+      ```
+
+## clamav 설치 (백신)
+- 패키지 설치
+  
+  ```
+    $ sudo apt-get install clamav
+  ```
+
+- 데이터베이스 업데이트
+  
+  ```
+    $ sudo freshclam
+  ```
+
+- 검사하기
+
+  ```
+    # home 디렉토리 하위 파일 검사
+    $ sudo clamscan -r /home
+
+    # 검사해서 감염된 파일 옮기기
+    $ sudo clamscan -r /home --move=/virus
+  ```
+- 에러
+  
+  - 에러내용 1
     ```
+    
+    ERROR: /var/log/clamav/freshclam.log is locked by another process
+    ERROR: Problem with internal logger (UpdateLogFile = /var/log/clamav/freshclam.log).
+    ERROR: initialize: libfreshclam init failed.
+    ERROR: Initialization error!
+
+    - 해결방법
+      $ sudo ps aux | grep fresh  #프로세스 확인
+      $ sudo killall freshclam    #프로세스 죽이기
+    ```
+- 참고
+  - https://www.clamav.net/ : 공식 홈페이지
 
 # 각종 명령어
 
@@ -105,3 +170,28 @@ $ sudo add-apt-repository ppa:docky-core/ppa
 - repository 삭제시
 $ sudo add-apt-repository --remove ppa:docky-core/ppa
 ```
+
+## 압축 명령어
+- tar 압축풀기
+    
+  ```
+  $ sudo tar -xvf [파일명.tar]
+  ```
+- tar.xz 압축풀기
+    
+  ```
+  $ sudo tar -xfJ 압축파일.tar.xz
+  ```
+- tar.gz 압축풀기
+  
+  ```
+  $ sudo tar -zxvf [파일명.tar.gz]
+  ```
+- tar로 압축하기
+  ```
+  $ sudo tar -cvf [파일명.tar] [폴더명]
+  ```
+- tar.gz로 합축하기
+  ```
+  $ sudo tar -zcvf [파일명.tar.gz] [폴더명]
+  ```
