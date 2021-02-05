@@ -88,3 +88,8 @@
     ```
      > mongo
     ```
+
+## mongodb 관련 프로그램
+- nosql booster (gui tool) : https://nosqlbooster.com/downloads
+
+- Jetbrains datagrip (rdb 문법 -> mongo 문법 변환) : https://www.jetbrains.com/ko-kr/datagrip/
