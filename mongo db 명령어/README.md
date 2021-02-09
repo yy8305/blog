@@ -25,6 +25,47 @@
 - _id 로 조회시
     ```sql
     db.collection.find( { _id:ObjectId('hash id') } )
+
+    # rdb 문법
+    SELECT * FROM collection WHERE _id = "A"
+    ```
+
+- alias 붙이기
+    ```sql
+    db.collection.aggregate(
+        [
+            {
+                "$project": {
+                    "_id": 0,
+                    "alias_change_name": "$collum_name"
+                }
+            }
+        ]
+    );
+
+    # rdb 문법
+    SELECT collum_name as alias_change_name from collection
+    ```
+
+- 반대인 경우
+    ```sql
+    db.collection.find( { "status": {"$ne":"A"} } )
+
+    # rdb 문법
+    SELECT * FROM collection WHERE status != "A"
+    ```
+
+- 이상, 이하, 초과, 미만
+    ```sql
+    - 이상 이하
+    db.collection.find( { "collumn": {"$gte":"1","$lte":"10"} } )
+
+    - 초과 미만
+    db.collection.find( { "collumn": {"$gt":"1","$lt":"10"} } )
+
+    # rdb 문법
+    SELECT * FROM collection WHERE collumn >= 1 and collumn <= 10  #이상 이하
+    SELECT * FROM collection WHERE collumn > 1 and collumn < 10  #초과 미만
     ```
 
 ## 삽입 (insert document)
@@ -92,6 +133,20 @@
 
 ## 삭제 (delete document)
 - 일반적인 삭제
+    - 1개 document 삭제
+        ```sql
+        db.collection.deleteMany({ status : "A" })
+
+        # rdb 문법
+        DELETE FROM collection WHERE status = 'A'
+        ```
+    - 여러개 document 삭제
+        ```sql
+        db.collection.deleteOne({ status : "A" })
+
+        # rdb 문법
+        DELETE FROM collection WHERE status = 'A'
+        ```
 
 
 # 참고
