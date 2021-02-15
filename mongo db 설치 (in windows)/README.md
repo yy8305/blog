@@ -6,53 +6,53 @@
 
 - 버전은 최신버전으로 나머지는 사진대로 선택후 Download 버튼 클릭
 
-    ![screenshot1](http://cfile23.uf.tistory.com/image/99AB6433601BA9EE2755F9)
+    ![screenshot1](http://cfile10.uf.tistory.com/image/99646F426029EF181CA3E1)
 
 ## 설치파일 실행
 
 - 설치된 msi 파일 실행후 Next 클릭
 
-    ![screenshot2](http://cfile27.uf.tistory.com/image/99B01043601BA9EE2B24DC)
+    ![screenshot2](http://cfile23.uf.tistory.com/image/993259356029EF181C9D41)
 
 - I accept ~ 체크후 Next 클릭
 
-    ![screenshot3](http://cfile24.uf.tistory.com/image/99B01A43601BA9EE2BEABB)
+    ![screenshot3](http://cfile1.uf.tistory.com/image/9948DE3A6029EF191C4E9D)
 
 - 일반적인 설치를 하실경우 Complete 클릭
 
-    ![screenshot4](http://cfile26.uf.tistory.com/image/99B01543601BA9EF2B6407)
+    ![screenshot4](http://cfile1.uf.tistory.com/image/994C0E446029EF1A1C1C1B)
 
 - Next 클릭
 
-    ![screenshot5](http://cfile5.uf.tistory.com/image/9952F035601BA9EF285BD9)
+    ![screenshot5](http://cfile5.uf.tistory.com/image/999AC9486029EF1A1CB7F4)
 
 - 왼쪽아래 "Install MongoDB Compass" 체크유지 및 Next 클릭   
     (mongodb GUI 툴을 설치하고 싶지 않으신분은 체크 해제)
 
-    ![screenshot6](http://cfile26.uf.tistory.com/image/9952E635601BA9EF283748)
+    ![screenshot6](http://cfile30.uf.tistory.com/image/993264356029EF1A1C78BF)
 
 - Install 클릭
 
-    ![screenshot7](http://cfile24.uf.tistory.com/image/990ACF34601BA9F0285B3C)
+    ![screenshot7](http://cfile26.uf.tistory.com/image/994C07446029EF1B1C1DAC)
 
 - 설하는도중 아래 팝업이 뜰텐데 저의 경우 실행하고 있는게 많아 "Do not~" 체크후 OK 클릭   
     (대신에 나중에 꼭 재시작 해야합니다.)   
     만약 실행하고 있는 프로그램들이 닫혀도 상관없다면 "Close the~" 체크후 OK 클릭
 
-    ![screenshot8](http://cfile23.uf.tistory.com/image/990DBD34601BA9F0276B1A)
+    ![screenshot8](http://cfile25.uf.tistory.com/image/99DBED456029EF1B1C3F6C)
 
 - 설치가 끝나고 바로 Compass 창이 뜰텐데 여기서 저는 자동 업데이트만 원하기 때문에 아래 처럼 체크후 "star ~" 클릭   
     (이후 창은 닫아도 됩니다.)
 
-    ![screenshot9](http://cfile23.uf.tistory.com/image/99C34142601BA9F02AE934)
+    ![screenshot9](http://cfile1.uf.tistory.com/image/99E6E0466029EF1C1C9FF8)
 
 - Finish 클릭
 
-    ![screenshot10](http://cfile21.uf.tistory.com/image/992EC03A601BA9F1292ECE)
+    ![screenshot10](http://cfile5.uf.tistory.com/image/9947DA446029EF1C1D41F5)
 
 - 지금 바로 시작하지 않을거면 No, 지금 바로 시작해도 되면 Yes
 
-    ![screenshot11](http://cfile23.uf.tistory.com/image/99EAA037601BA9F12725E1)
+    ![screenshot11](http://cfile26.uf.tistory.com/image/99E6FC376029EF1C1C1828)
 
 
 ## 환경변수 설정

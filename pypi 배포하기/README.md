@@ -5,7 +5,7 @@
 
 - 오른쪽 위에 register 버튼 클릭
 
-    ![screenshot1](http://cfile4.uf.tistory.com/image/99B74D33601A583B24CBF0)
+    ![screenshot1](http://cfile21.uf.tistory.com/image/99DC0D436029F3EF1E81EC)
 
 - 정보 입력후 가입하기
     - Name : 이름
@@ -16,12 +16,22 @@
 
     - Password : 로그인 암호
 
-    ![screenshot2](http://cfile2.uf.tistory.com/image/99EF0D45601A583B2372F0)
+    ![screenshot2](http://cfile1.uf.tistory.com/image/99E563376029F3F01E5839)
 
 
 ## 필요 패키지 다운로드
 ```
 pip install setuptools wheel twine
+
+pip install m2r    # markdown 파일 rst 로 변환
+```
+
+## md 파일 rst로 변환
+```
+# cmd 창에서 해당 명령어 실행
+# 완변하게 변환되지 않기 때문에 변환후에 파일 한번 확인 필요
+
+> m2r ./README.md 
 ```
 
 ## 배포 명령어
