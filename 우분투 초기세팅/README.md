@@ -180,7 +180,7 @@ $ sudo add-apt-repository --remove ppa:docky-core/ppa
 - tar.xz 압축풀기
     
   ```
-  $ sudo tar -xfJ 압축파일.tar.xz
+  $ sudo tar Jxvf 압축파일.tar.xz
   ```
 - tar.gz 압축풀기
   
