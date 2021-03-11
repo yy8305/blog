@@ -1,6 +1,6 @@
 # vue 기초
 
-## 프로젝트(cli) 만들고 실행
+## 프로젝트(cli) 만들고 실행하기
 
 - 프로젝트 생성
 
@@ -92,6 +92,10 @@
         # 참고
         https://bootstrap-vue.org/
         ```
+
+## 프로젝트 에러 발생시 캐시 초기화
+- npm 캐시 삭제: npm cache clean --force
+- 프로젝트/node_modules 삭제 -> npm i (다시 설치)
 
 # 참고
 - https://cli.vuejs.org/
