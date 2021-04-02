@@ -104,6 +104,15 @@ $ which brew : 경로확인
 $ brew --version : 버전확인
 ```
 
+## go 언어 설치
+
+- 자동으로 arm64-bigsur 패키지로 설치됨
+
+- 터미널에서 실행
+
+    ```
+    $ brew install go
+    ```
 # 참고 
 
 - https://www.44bits.io/ko/post/setup-apple-silicon-m1-for-developers
